@@ -14,8 +14,8 @@ const Space = () => {
     }, []);
 
     return (
-        <div className='z-10'>
-            <canvas ref={canvasRef} className='border-2 absolute w-full' style={{height: '40vh'}}></canvas>
+        <div className='relative'>
+            <canvas ref={canvasRef} className=' absolute w-full' style={{height: '40vh'}}></canvas>
         </div>
     );
 }

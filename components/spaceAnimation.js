@@ -17,8 +17,8 @@ export function initializeSpaceAnimation(canvas) {
             fading: Math.random() > 0.5 ? true : false,
             velocityX: (Math.random() - 0.5) * 2,
             velocityY: (Math.random() - 0.5) * 2,
-            targetVelocityX: 0, // New
-            targetVelocityY: 0, // New
+            targetVelocityX: 0, 
+            targetVelocityY: 0, 
             movementType: Math.random() > 0.5 ? 'circular' : 'linear', 
         };
         // Initialize target velocities
@@ -33,7 +33,6 @@ export function initializeSpaceAnimation(canvas) {
         stars.forEach(star => {
             if (Math.random() < 0.01) { 
                 star.movementType = star.movementType === 'circular' ? 'linear' : 'circular';
-                // Set new target velocities based on movement type
                 if (star.movementType === 'circular') {
                     star.targetVelocityX = (Math.random() - 0.5) * 2;
                     star.targetVelocityY = (Math.random() - 0.5) * 2;
@@ -43,7 +42,6 @@ export function initializeSpaceAnimation(canvas) {
                 }
             }
     
-            // Gradually adjust velocities towards target velocities
             star.velocityX += (star.targetVelocityX - star.velocityX) * 0.05;
             star.velocityY += (star.targetVelocityY - star.velocityY) * 0.05;
     
