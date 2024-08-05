@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Space from "@/components/Space";
 import Event from '@/components/Event';
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -76,8 +77,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8">
-                <h1 className="text-5xl font-medium text-center text-white">Upcoming Events</h1>
+            <div className="mt-20">
+                <h1 className="text-5xl font-medium text-center text-white mb-12">Upcoming Events</h1>
                 <Event date="TBD" heading="First Meeting" body="We invite you to explore the depths of the universe with us at our very first  in-person meeting. Stay tuned for guest speakers, workshops, and volunteer opportunities!" subtitle="Spring 2024"/>
                 <div className="flex justify-center items-center">
                   <div className="py-8 bg-blue-950 w-10/12">
@@ -88,6 +89,13 @@ export default function Home() {
           </div>
           
           {/* CONTACT */}
+
+          <div className='bg-black'>
+            <p>ajsdoasadsi</p>
+            < ContactForm />
+          </div>
+
+          {/* BLOG */}
 
           <div className='bg-black'>
             <p>ajsdoasadsi</p>

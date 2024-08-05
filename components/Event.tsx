@@ -42,9 +42,10 @@ const Event: FC<PageProps> = ({ date, heading, body, subtitle }) => {
                             <h1 className='text-3xl text-white mb-4'>{heading}</h1>
                             <p className='text-gray-400 text-md mb-4'>{subtitle}</p>
                             <p className='text-md text-gray-400'>{displayBody}</p>
+                            <hr className='hr-1 mt-2 mb-2 w-1/4' />
                             {body.length > maxLength && (
                                 <button onClick={handleToggle}>
-                                    {isExpanded ? 'Show Less' : 'Read More'}
+                                    <p className='text-gray-400 text-left'>{isExpanded ? 'Show Less' : 'Read More'}</p>
                                 </button>
                             )}
                         </div>
@@ -54,6 +55,7 @@ const Event: FC<PageProps> = ({ date, heading, body, subtitle }) => {
                             <div className='flex flex-col w-1/3'>
                                 <h1 className='text-3xl text-white mb-4'>{heading}</h1>
                                 <p className='text-md text-gray-400'>{displayBody}</p>
+                                <hr className='hr-1 mt-2 mb-2 w-1/4' />
                                 {body.length > maxLength && (
                                     <button onClick={handleToggle}>
                                         <p className='text-gray-400 text-left'>{isExpanded ? 'Show Less' : 'Read More'}</p>
