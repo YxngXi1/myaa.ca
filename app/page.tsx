@@ -3,6 +3,7 @@ import React from "react";
 import Space from "@/components/Space";
 import Event from '@/components/Event';
 import ContactForm from "@/components/ContactForm";
+import Blogs from "@/components/Blogs";
 
 export default function Home() {
   return (
@@ -91,14 +92,19 @@ export default function Home() {
           {/* CONTACT */}
 
           <div className='bg-black'>
-            <p>ajsdoasadsi</p>
             < ContactForm />
           </div>
 
           {/* BLOG */}
 
-          <div className='bg-black'>
-            <p>ajsdoasadsi</p>
+          <div className='bg-blue-950 py-12'>
+            <p className="text-white text-5xl">MYAA Blog</p>
+            <div className="py-8 bg-blue-950 w-10/12">
+              <hr className='hr-1'/>
+            </div>
+            <div>
+              < Blogs/>
+            </div>
           </div>
           
         </div>

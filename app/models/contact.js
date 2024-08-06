@@ -16,6 +16,11 @@ const contactSchema = new Schema({
 
     },
 
+    grade: {
+        type: Number,
+        required: [true, "Grade is required."],
+    },
+
     message: {
         type: String,
         required: [true, "Message is required"],
