@@ -21,7 +21,7 @@
 }
 
 .fadeOut {
-  animation: fadeOut 2s ease-in-out forwards;
+  animation: fadeOut 1.5s ease-in-out forwards;
   opacity: 1;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .fadeInOut {
-  animation: fadeInOut 3.5s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: fadeInOut 0.2s ease-in-out forwards;
+  animation-delay: 1.5s;
   opacity: 0;
 }
 
@@ -53,8 +53,8 @@
 }
 
 .fadeIn {
-  animation: fadeIn 3.5s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1.6s;
   opacity: 0;
 }
 

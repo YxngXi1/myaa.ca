@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       <div className="z-10 absolute min-h-screen w-full bg-white fadeInOut"></div>
-      <div className="absolute fadeIn z-50">
+      <div className="fadeIn">
         <div className="relative">
           {/* HERO */}
           <div className="relative z-40" style={{ height: '40vh' }}>
@@ -32,7 +32,7 @@ export default function Home() {
 
             {/* ABOUT US */}
 
-            <div className="flex flex-col justify-center items-center h-full">
+            <section className="flex flex-col justify-center items-center h-full">
               <h1 className="text-4xl text-white mt-8 lg:text-5xl">Welcome to MYAA</h1>
               <br />
               <div className="flex flex-col lg:flex-row">
@@ -76,9 +76,9 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div className="mt-20">
+            <section className="mt-20">
                 <h1 className="text-5xl font-medium text-center text-white mb-12">Upcoming Events</h1>
                 <Event date="TBD" heading="First Meeting" body="We invite you to explore the depths of the universe with us at our very first  in-person meeting. Stay tuned for guest speakers, workshops, and volunteer opportunities!" subtitle="Spring 2024"/>
                 <div className="flex justify-center items-center">
@@ -86,7 +86,7 @@ export default function Home() {
                     <hr className='hr-1'/>
                   </div>
               </div>
-            </div>
+            </section>
           </div>
           
           {/* CONTACT */}
@@ -97,9 +97,9 @@ export default function Home() {
 
           {/* BLOG */}
 
-          <div className='bg-blue-950 py-12'>
+          <div className='bg-blue-950 py-12 flex flex-col justiy-center items-center'>
             <p className="text-white text-5xl">MYAA Blog</p>
-            <div className="py-8 bg-blue-950 w-10/12">
+            <div className="py-8 bg-blue-950 w-1/12">
               <hr className='hr-1'/>
             </div>
             <div>

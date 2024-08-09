@@ -44,7 +44,7 @@ export default function ContactForm() {
     };
 
     return ( 
-       <div className="">
+       <div className="py-8">
         <h1 className="text-blue-800 text-4xl text-center">Become a Member</h1>
         <div className="w-full flex justify-center items-center">
             <hr className="hr-1 my-6 w-1/12"/>
