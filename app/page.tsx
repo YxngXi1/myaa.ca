@@ -8,17 +8,25 @@ import Blogs from "@/components/Blogs";
 export default function Home() {
   return (
     <main className="">
-      <div className="fixed z-0  min-h-screen w-full flex justify-center items-center text-center flex-col fadeOut bg-black">
+      {/* Launching Scene */}
+
+      <div className="fixed min-h-screen w-full flex justify-center items-center text-center flex-col fadeOut bg-black">
         <p className="text-7xl text-white">Launching Our Spaceship...</p>
         <div className="h-80 w-80 flex justify-center items-center">
           <Image src="/spaceship.png" height={200} width={200} alt="rocket" className="shake"/>
         </div>
       </div>
-      <div className="z-10 absolute min-h-screen w-full bg-white fadeInOut"></div>
+
+      {/* White Transition */}
+      <div className="absolute min-h-screen w-full bg-white fadeInOut"></div>
+
+      {/* MAIN PORTION */}
       <div className="fadeIn">
-        <div className="relative">
+        <div className="">
+
+
           {/* HERO */}
-          <div className="relative z-40" style={{ height: '40vh' }}>
+          <div className="relative" style={{ height: '40vh' }}>
             <Space />
             <div className="relative flex flex-col justify-center items-center" style={{ height: '40vh' }}>
               <h1 className="text-white text-4xl font-semibold mb-12 text-center tracking-wider lg:text-6xl">
@@ -28,12 +36,12 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-blue-950">
+          <div className="bg-blue-950 flex flex-col justify-center items-center w-full">
 
             {/* ABOUT US */}
 
-            <section className="flex flex-col justify-center items-center h-full">
-              <h1 className="text-4xl text-white mt-8 lg:text-5xl">Welcome to MYAA</h1>
+            <section className="container flex flex-col justify-center items-centerm">
+              <h1 className="text-4xl text-white mt-8 lg:text-5xl text-center">Welcome to MYAA</h1>
               <br />
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
@@ -78,7 +86,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="mt-20">
+            <section className="mt-20 container">
                 <h1 className="text-5xl font-medium text-center text-white mb-12">Upcoming Events</h1>
                 <Event date="TBD" heading="First Meeting" body="We invite you to explore the depths of the universe with us at our very first  in-person meeting. Stay tuned for guest speakers, workshops, and volunteer opportunities!" subtitle="Spring 2024"/>
                 <div className="flex justify-center items-center">
@@ -91,8 +99,10 @@ export default function Home() {
           
           {/* CONTACT */}
 
-          <div className='bg-black'>
-            < ContactForm />
+          <div className='bg-black flex justify-center items-center'>
+            <div className="container">
+              <ContactForm />
+            </div>
           </div>
 
           {/* BLOG */}
@@ -106,8 +116,14 @@ export default function Home() {
               < Blogs/>
             </div>
           </div>
-          
+
+
         </div>
+
+
+        
+
+
       </div>
     </main>
   );
